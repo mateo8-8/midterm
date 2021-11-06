@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<meta charset="UTF-8">
+	<title>Mid Semester: Physical System Vulnerability Assessment</title>
+  <meta name="author" content="Matthew McCreary">
+	<link href="calculator.css" type="text/css" rel="stylesheet"/>
+	<script src="calculator.js" defer></script>
+      
+   <!-- Compiled and minified JavaScript -->
+   <script src="jquery-3.2.1.min.js"></script>
+
+	<body>
+		<div class="main" id="main">
+			<h1>Cyber Physical System Vulnerability Calculator</h1>
+			<div class="warning" id="warning">Select values for all categories to generate a score</div>
+			<div class="score" id="score">--</div>
+
+			<div class="container">
+				<div class="column">
+					<!--ATTACK VECTOR-->
+					<h4>Attack Vector</h4>
+					<input type="radio" name="AV" id="AV_N" value="AV_N">
+					<label class="radioSelect" for="AV_N">Network</label>
+
+					<input type="radio" name="AV" id="AV_A" value="AV_A">
+					<label class="radioSelect" for="AV_A">Adjacent Network</label>
+
+					<input type="radio" name="AV" id="AV_L" value="AV_L">
+					<label class="radioSelect" for="AV_L">Local</label>
+
+					<input type="radio" name="AV" id="AV_P" value="AV_P">
+					<label class="radioSelect" for="AV_P">Physical</label>
+
+
+					<!--ATTACK COMPLEXITY-->
+					<h4>Attack Complexity</h4>
+					<input type="radio" name="AC" id="AC_L" value="AC_L">
+					<label class="radioSelect" for="AC_L">Low</label>
+
+					<input type="radio" name="AC" id="AC_H" value="AC_H">
+					<label class="radioSelect" for="AC_H">High</label>
+
+
+					<!--PREVILEDGE REQUIRED-->
+					<h4>Privilege Required</h4>
+					<input type="radio" name="PR" id="PR_N" value="PR_N">
+					<label class="radioSelect" for="PR_N">None</label>
+
+					<input type="radio" name="PR" id="PR_L" value="PR_L">
+					<label class="radioSelect" for="PR_L">Low</label>
+
+					<input type="radio" name="PR" id="PR_H" value="PR_H">
+					<label class="radioSelect" for="PR_H">High</label> 
+
+
+
+					<!--USER INTERACTION-->
+					<h4>User Interaction</h4>
+					<input type="radio" name="UI" id="UI_N" value="UI_N">
+					<label class="radioSelect" for="UI_N">None</label>
+					<input type="radio" name="UI" id="UI_R" value="UI_R">
+					<label class="radioSelect" for="UI_R">Required</label>
+
+
+					<!--SCOPE-->
+					<h4>Scope</h4>
+					<input type="radio" name="scope" id="scope_U" value="scope_U">
+					<label class="radioSelect" for="scope_U">Unchanged</label>
+					<input type="radio" name="scope" id="scope_C" value="scope_C">
+					<label class="radioSelect" for="scope_C">Changed</label>
+
+
+                  <!--BASE-->
+   					<h4>Base</h4>
+					<input type="radio" name="base" id="base0" value="base0">
+					<label class="radioSelect" for="base0">0.00</label>
+         			<input type="radio" name="base" id="base1" value="2.75">
+		  			<label class="radioSelect" for="base1">1.75</label>
+					<input type="radio" name="base" id="base2" value="2.75">
+					<label class="radioSelect" for="base2">2.75</label>
+          
+				</div>
+			</div> <!-- End container div -->
+		</div> <!-- End main div -->		
+	</body>
+</html>
